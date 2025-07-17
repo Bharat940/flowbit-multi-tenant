@@ -26,6 +26,7 @@ A Dockerized multi-tenant ticketing platform with n8n workflow integration, tena
 ---
 
 ## 📁 Project Structure
+```
 flowbit-multi-tenant/
 ├── backend/
 │   ├── routes/ (auth.route.js, ticket.route.js, user.route.js)
@@ -46,6 +47,7 @@ flowbit-multi-tenant/
 ├── docker-compose.yml
 ├── .env.example
 └── README.md
+```
 
 ---
 
