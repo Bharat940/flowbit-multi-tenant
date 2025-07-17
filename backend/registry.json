@@ -1,0 +1,23 @@
+{
+    "screens": {
+        "supportTickets": {
+            "name": "Support Tickets",
+            "path": "/tickets",
+            "remoteEntry": "http://localhost:3100/remoteEntry.js",
+            "module": "./SupportTicketsApp",
+            "scope": "tickets"
+        }
+    },
+    "tenants": {
+        "LogisticsCo": {
+            "allowedScreens": [
+                "supportTickets"
+            ]
+        },
+        "RetailGmbH": {
+            "allowedScreens": [
+                "supportTickets"
+            ]
+        }
+    }
+}

@@ -1,0 +1,215 @@
+.shell-body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7fafc;
+  line-height: 1.6;
+  color: #2d3748;
+}
+
+.shell-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.shell-sidebar {
+  width: 260px;
+  padding: 2rem 1.5rem;
+  background-color: #1a202c;
+  color: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease-in-out;
+}
+
+.shell-sidebar h3 {
+  margin: 0 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.shell-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shell-sidebar li {
+  margin-bottom: 0.75rem;
+}
+
+.shell-sidebar a {
+  color: #e2e8f0;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.shell-sidebar a:hover {
+  background-color: #2d3748;
+  color: #ffffff;
+}
+
+.shell-sidebar a.active {
+  background-color: #3182ce;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.shell-sidebar button {
+  background-color: #e53e3e;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.shell-sidebar button:hover {
+  background-color: #c53030;
+  transform: translateY(-1px);
+}
+
+.shell-sidebar button:active {
+  transform: translateY(0);
+}
+
+.shell-main-content {
+  flex: 1;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  overflow-y: auto;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.shell-auth-form {
+  max-width: 450px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.shell-auth-form input,
+.shell-auth-form select,
+.shell-auth-form button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.shell-auth-form input:focus,
+.shell-auth-form select:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.shell-auth-form select {
+  background-color: #ffffff;
+}
+
+.shell-auth-form button {
+  background-color: #3182ce;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.shell-auth-form button:hover {
+  background-color: #2b6cb0;
+  transform: translateY(-1px);
+}
+
+.shell-auth-form button:active {
+  transform: translateY(0);
+}
+
+.shell-audit-log-container h2 {
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.shell-audit-log-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shell-audit-log-list li {
+  background-color: #f9fafb;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid #3182ce;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #2d3748;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.shell-error {
+  color: #e53e3e;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
+
+.shell-loading {
+  text-align: center;
+  font-style: italic;
+  color: #4a5568;
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shell-container {
+    flex-direction: column;
+  }
+
+  .shell-sidebar {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .shell-main-content {
+    padding: 1.5rem;
+  }
+
+  .shell-auth-form {
+    margin: 2rem auto;
+    padding: 1.5rem;
+  }
+
+  .shell-auth-form input,
+  .shell-auth-form select,
+  .shell-auth-form button {
+    font-size: 0.95rem;
+  }
+
+  .shell-audit-log-container h2 {
+    font-size: 1.5rem;
+  }
+}
